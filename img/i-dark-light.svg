@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+	<defs><style>.a{fill:none;}</style></defs>
+<title>Dark-light icon</title>
+<rect class="a" width="400" height="400"/>
+<path class="icon" d="M200,25A175,175,0,1,0,375,200,175,175,0,0,0,200,25Zm0,337.5V300a100,100,0,0,1,0-200V37.5a162.5,162.5,0,0,1,0,325Z"/>
+<path class="icon" d="M300,200A100,100,0,0,0,200,100V300A100,100,0,0,0,300,200Z"/>
+</svg>
