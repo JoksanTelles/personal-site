@@ -4,8 +4,38 @@
 * Author: Joksan Télles
 * License: Creative Commons | CC BY
 * https://creativecommons.org/licenses/by/4.0/
+*
 */
 
+/*
+***          INDEX          ***
+-------------------------------
+# General
+# Theme settings
+	# Dark mode
+	# Light mode
+# General elements
+	# Fonts
+	# Buttons
+	# Containers
+	# Back to top button
+# Navigation bar
+# Post header
+# Post content
+	# General settings
+	# Paragraphs
+	# Headers
+	# Images
+	# Horizontal line
+	# Highlight code
+	# Highlight text
+	# Bloquote
+# Social media sharing buttons
+# Author
+# Recent articles
+# Mail chimp form
+
+*/
 
 
 /*--------------------------------------------------------------
@@ -106,9 +136,28 @@ button {
 ::-webkit-scrollbar-track { background: var(--black); }
 ::-webkit-scrollbar-thumb { background: blue; }*/
 
+/* Back to top button */
+#backToTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	border: none;
+	outline: none;
+	background-color: var(--bg-secondary);
+	color: var(--fn-secondary);
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+	width: 50px;
+}
+#backToTop svg {
+	width: 100%;
+}
 
-/* Contenedores */
-/* Botones */
+#backToTop:hover {
+	background-color: #b6c4ef;
+}
 
 
 /*-------------------------------------------------
@@ -471,8 +520,6 @@ body.light #dark {
 /*-------------------------------------------------
  # Social media sharing buttons
 -------------------------------------------------*/
-#sharing-buttons {
-}
 #sharing-buttons .container {
     display: flex;
     flex-direction: column;
@@ -598,8 +645,6 @@ body.light #dark {
 /*-------------------------------------------------
  # Mailchimp form
 -------------------------------------------------*/
-#newsletter {
-}
 #newsletter .container {
     display: flex;
     flex-direction: column;
@@ -738,27 +783,3 @@ div.img-bg .bg {
 	display: block;
 }
 
-/*-------------------------------------------------
- # Back to top button
--------------------------------------------------*/
-#backToTop {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	border: none;
-	outline: none;
-	background-color: var(--bg-secondary);
-	color: var(--fn-secondary);
-	cursor: pointer;
-	padding: 15px;
-	border-radius: 4px;
-	width: 50px;
-}
-#backToTop svg {
-	width: 100%;
-}
-
-#backToTop:hover {
-	background-color: #b6c4ef;
-}
