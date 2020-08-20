@@ -53,8 +53,8 @@
 	--bg-color: #000000;
 	--black: #010101;
 	--dark: #090a0b;
-	--yellow: #ffff00; /* Main color in light theme */
-	--blue: #0000ff; /* Main color in dark theme */
+	--yellow: #ffff00; /* Main color in dark theme */
+	--blue: #0000ff; /* Main color in light theme */
 	--font-color: #333333;
 	--blue-light: #e4e4ff;
 
@@ -466,7 +466,7 @@ body.light #dark {
 .text-highlight h3 {
 	margin-bottom: 20px;
 	font-family: 'Playfair Display', sans-serif;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 32px;
 	color: blue;
 }
@@ -520,32 +520,44 @@ body.light #dark {
 /*-------------------------------------------------
  # Social media sharing buttons
 -------------------------------------------------*/
+#sharing-buttons {
+	border: 1px solid #e3e9ed;
+    background: linear-gradient(#fbfdfe,#f4f8fb);
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
 #sharing-buttons .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     padding: 50px;
-    margin-bottom: 50px;
-    max-width: 700px;
-    border: 1px solid #e3e9ed;
-    background: linear-gradient(#fbfdfe,#f4f8fb);
-    border-radius: 5px;
+    max-width: 500px;
+}
+#sharing-buttons .container > div {
+	display:flex;
+	justify-content: center;
+}
+#sharing-buttons .buttons,
+#sharing-buttons .copy-link {
+	margin: 0 25px;
+	width: 50%;
 }
 #sharing-buttons h3 {
-	margin-bottom: 20px;
-	text-transform: uppercase;
-	color: blue;
+	margin-bottom: 30px;
+	color: var(--dark);
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 34px;
 }
 #sharing-buttons .buttons{
 	margin-bottom: 20px;
 }
-#sharing-buttons svg {
-	height: 60px;
-	padding: 13px;
-	border-radius: 15px;
+#sharing-buttons a svg {
+	height: 40px;
+	padding: 7px;
+	border-radius: 3px;
 	background: var(--dark);
-	box-shadow: 0 0 50px rgba(0,0,0,0.1);
 }
 #sharing-buttons a {
 	margin-right: 10px;
@@ -560,43 +572,23 @@ body.light #dark {
 #sharing-buttons a:hover .sm {
 	fill: white;
 }
-.copy-link {
-    max-width: 450px;
-    height: 40px;
-    background: white;
-    border-radius: 50px;
-    border: 1px solid #dae2e7;
-}
-.copy-link .__text {
-    border: 0;
-    padding: 10px 20px;
-    border-radius: 20px 0 0 20px;
-    width: auto;
-    height: 100%;
-    font-size: 16px;
-    color: dimgray;
-}
-.copy-link button {
-	color: white;
-	font-weight: 500;
-	font-size: 16px;
-	transition: 0.5s ease-in-out;
+#sharing-buttons #sm-copytext {
 	cursor: pointer;
 }
-.copy-link .__button {
-	border-radius: 0 50px 50px 0;
-	background: blue;
-	height: 100%;
-}
-.copy-link button:hover {
-	background: darkblue;
-}
 
-.copy-link .__text:focus,
-.copy-link .__button:focus {
-    outline: none;
+.copy-link svg {
+	cursor: pointer;
 }
-
+ 
+#sharing-buttons .__text {
+	background: white;
+    padding: 10px 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    padding-right: 15px;
+}
 
 
 /*-------------------------------------------------
@@ -708,12 +700,12 @@ div.img-bg .bg {
     margin-bottom: 50px;
     max-width: 700px;
     border: 1px solid #e3e9ed;
-    background: linear-gradient(#fbfdfe,#f4f8fb);
+    background: rgb(245, 245, 245);
     border-radius: 5px;
 }
 #newsletter .title {
-	font-size: 34px;
-	color: blue;
+	font-size: 38px;
+	color: var(--dark);
 	margin-bottom: 5px;
 }
 #newsletter .subtitle {
@@ -746,13 +738,13 @@ div.img-bg .bg {
 	cursor: pointer;
     border: 1px solid #dae2e7;
     border-radius: 5px;
-	background: blue;
+	background: var(--dark);
 	height: 100%;
 	color: white;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 16px;
 	padding: 10px 25px;
 }
 #newsletter .__button:hover {
-	background: darkblue;
+	background: var(--dark);
 }

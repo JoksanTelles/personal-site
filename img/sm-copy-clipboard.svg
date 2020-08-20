@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<defs><style>.a{fill:none;}</style></defs>
+<title>Copy to clipboard</title>
+<rect class="a" width="400" height="400"/>
+<path class="sm" d="M337.5,375H125a12.5,12.5,0,0,1-12.5-12.5V100A12.5,12.5,0,0,1,125,87.5H337.5A12.5,12.5,0,0,1,350,100V362.5A12.5,12.5,0,0,1,337.5,375Zm-200-25H325V112.5H137.5Z"/>
+<path class="sm" d="M75,287.5V50H287.5V37.5A12.5,12.5,0,0,0,275,25H62.5A12.5,12.5,0,0,0,50,37.5V300a12.5,12.5,0,0,0,12.5,12.5H75Z"/>
+</svg>
