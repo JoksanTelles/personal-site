@@ -1,0 +1,512 @@
+// Import
+@import "./src/styles/_fonts.scss";
+@import "./src/styles/_elements.scss";
+@import "./src/styles/_components.scss";
+@import "./src/styles/_block.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection {
+    background:rgba(0, 0, 255, 0.1);
+}
+
+#about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* -------------------------------------------------
+   # Navigation Bar component
+----------------------------------------------------*/
+.navbar {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    position: fixed;
+    z-index: 1000;
+
+    .left {
+        display: flex;
+        align-items: center;
+        .social svg {
+            width: 18px;
+            margin-right: 10px;
+            transition: color 1s;
+        }
+        .social a {
+            color: #666;
+            transition: color 1s;
+
+            :hover {
+                color: blue;
+                transition: color 1s;
+            }
+        }
+    }
+
+    .logo {
+        height: 30px;
+        width: auto;
+        margin-right: 15px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto 50px;
+    }
+
+    ul {
+        display: flex;
+    }
+    ul > li {
+        list-style: none;
+        margin-left: 5px;
+    }
+    ul > li > a {
+        font-family: 'fontbase';
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: gray;
+        background-color: transparent;
+        padding: 8px 15px;
+        border-radius: 3px;
+        transition: background-color 1s;
+        display: flex;
+        align-items: center;
+    }
+    ul > li > a:hover {
+        background-color: rgba(0, 0, 255, 0.1);
+        color: blue;
+    }
+    ul > li > button {
+        background: lavender;
+        padding: 6px 10px;
+        border-radius: 3px;
+        border: 0;
+        
+        img {
+            width: 18px;
+        }
+    }
+    .navitem-icon {
+        width: 14px;
+        margin-right: 5px;
+
+        .icon {
+            stroke: red;
+            stroke-width: 5px;
+        }
+    }
+    li a .icon {
+        margin-top: 1px;
+        width: 16px;
+        stroke-width: 2.5px;
+        margin-right: 5px;
+    }
+    li:first-child a .icon {
+        margin-top: 3px;
+    }
+}
+.navbar.active {
+    background-color: white;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* -------------------------------------------------
+   # Page Header - Component
+----------------------------------------------------*/
+.page--header {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    .content {
+        position: relative;
+        width: 600px;
+        height: 100%;
+        margin: auto;
+        z-index: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tag {
+            font-size: 18px;
+            font-weight: 700;
+            color: blue;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .division {
+            width: 20px;
+            height: 1px;
+            background: gray;
+            margin: 0 auto 30px;
+        }
+        .title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 300;
+            color: #212121;
+            margin-bottom: 10px;
+        }
+        .description {
+            text-align: center;
+            font-size: 18px;
+            color: #666666;
+        }
+    }
+
+    .background {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 380px;
+
+        .circle {
+            position: relative;
+            z-index: 1;
+            top: -823px;
+            right: -445px;
+            width: 1200px;
+            height: 1200px;
+            border-radius: 50%;
+            background: linear-gradient(-70deg, #eff4ff, #eff4fb00);
+        }
+    }
+}
+
+
+/* -------------------------------------------------
+   # Page About - Component
+----------------------------------------------------*/
+.page-layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.twocolumn {
+    max-width: 1200px;
+    display: grid;
+    gap: 30px;
+    grid-column: 12;
+    grid-template-areas:
+        "m1 one m2 two m3";
+    grid-template-columns: 1fr 4fr 1fr 5fr 1fr;
+    
+    .title {
+        font-size: 24px;
+        font-family: 'fontbase';
+        font-weight: 700;
+        color: #333;
+    }
+}
+.twocolumn .one {
+    grid-area: one;
+}
+.twocolumn .two {
+    grid-area: two;
+}
+.twocolumn .margin:nth-child(1) {
+    grid-area: m1;
+}
+.twocolumn .margin:nth-child(2) {
+    grid-area: m2;
+}
+.twocolumn .margin:nth-child(3) {
+    grid-area: m3;
+}
+
+.twocolumn p {
+    color: #808080;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* -------------------------------------------------
+   # Front-Page - Layout
+----------------------------------------------------*/
+.Container {
+    max-width: 1200px;
+}
+/* Front page */
+
+// Front-page Header
+.FrontPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    
+    // Front-page AboutMe
+    .AboutMe {
+        .Grid {
+            display: grid;
+            gap: 30px;
+            row-gap: 0;
+            grid-template-areas:
+                "Sb  Sb  Sb  Sb  Sb  Sb  Sb  Sb  Sb  Sb  Sb  Sb"
+                "Co  Co  Co  Co  Sp1 Sp1 Cr1 Cr1 Cr1 Cr1 Cr1 Cr1"
+                "Sp2 Sp2 Sp2 Sp2 Sp2 Cr2 Cr2 Cr2 Cr2 Cr2 Cr2 Sp3"
+                "Sp4 Sp4 Sp4 Sp4 Cr3 Cr3 Cr3 Cr3 Cr3 Cr3 Sp5 Sp5";
+            grid-template-columns: repeat(12, 1fr);
+            /*  Name references:
+                Subtitle: Sb
+                Content:  Co
+                Spacer:   Sp
+                Card:     Cr */
+        }
+
+        .Subtitle         { grid-area: Sb;  }
+        .FrontpageHeading { grid-area: Co;  }
+        .FrontpageCard.One         { grid-area: Cr1; }
+        .FrontpageCard.Two         { grid-area: Cr2; }
+        .FrontpageCard.Three       { grid-area: Cr3; }
+        .Spacer1          { grid-area: Sp1; }
+        .Spacer2          { grid-area: Sp2; }
+        .Spacer3          { grid-area: Sp3; }
+        .Spacer4          { grid-area: Sp4; }
+        .Spacer5          { grid-area: Sp5; }
+
+        .Card.One {  margin-top: 25px; }
+
+    }
+}
+
+// Front-page Portfolio
+// Front-page BlogPosts
+
+/* -------------------------------------------------
+   # Front-Page - Components
+----------------------------------------------------*/
+.FrontPage {
+
+    .AboutMe {
+        .Subtitle {
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #808080;
+        }
+        .Title {
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 24px;
+            color: #212121;
+        }
+        .Description {
+            color: #808080;
+        }
+    }
+
+    
+}
+
+/*---------------------------------------
+------------INDIVIDUAL LAYOUT------------
+-----------------------------------------*/
+
+// Frontpage Hero
+.FrontpageHero {
+    height: 100%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+    .grid {
+        z-index: 20;
+        margin: auto;
+        display: grid;
+        align-content: end;
+        grid-column: 12;
+        grid-template-areas:
+            "one two three";
+        grid-template-columns: 1fr 5fr 6fr;
+    
+        .margin:nth-child(1) { grid-area: one; }
+        .content { grid-area: two; }
+        .margin:nth-child(2) { grid-area: three; }
+    }
+    
+}
+
+
+// Frontpage Header
+.FrontpageHeader {
+    .title {
+        font-family: 'fontbase';
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        font-family: 'fontbase';
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: blue;
+        margin-bottom: 5px;
+    }
+    .description {
+        font-size: 16px;
+        color: #808080;
+        margin-bottom: 20px;
+    }
+    .CTA button {
+        padding: 0 20px;
+        height: 40px;
+        border: 2px #212121 solid;
+        border-radius: 3px;
+        margin-right: 10px;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        a {
+            color: white;
+        }
+        :nth-child(2) a {
+            color: #212121;
+        }
+    }
+    button:nth-child(1) {
+        background: #212121;
+    }
+    button:nth-child(2) {
+        background: transparent;
+
+        a {
+            color: #212121;
+        }
+    }
+}
+
+// Frontpage - Header Background
+.FrontpageHero .HeaderBackground {
+    position: absolute; overflow: hidden;
+    width: 100%; height: 450px; z-index: 10;
+
+    .circle.one, .circle.two {
+        position: absolute;
+        z-index: 1;
+        border-radius: 50%;
+    }
+    .circle.one {
+        background: linear-gradient(-50deg, #eff4ff, #eff4fb00);
+        top:    -750px; right:  -450px;
+        width:  1200px; height: 1200px;
+    }
+    .circle.two {
+        background: linear-gradient(50deg, #eff4ff, #eff4fb00);
+        top:    -250px; left:   -150px;
+        width:   450px; height:  450px;
+    }
+    .circles-pattern {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        justify-content: space-between;
+        width:  75px; height: 75px;
+        top: 300px;   left: 70px;
+        
+        div {
+            border-radius: 50%;
+            background-color: #c4c4c4;
+            width: 5px;         height: 5px;
+            margin-right: 10px; margin-bottom: 10px;
+        }
+    }
+
+}
+
+
+/*---------------------------------------
+---------INDIVIDUAL COMPONENTS-----------
+-----------------------------------------*/
+
+// Frontpage Heading
+.FrontpageHeading {
+    .title {
+        font-size: 24px;
+        font-weight: 400;
+        color: #212121;
+        margin-bottom: 10px;
+    }
+    .subtitle {
+        font-size: 16px;
+        font-weight: 700;
+        color: #808080;
+        margin-bottom: 5px;
+    }
+    .description {
+        font-size: 16px;
+        color: #808080;
+    }
+}
+
+// Frontpage Card
+.FrontpageCard {
+    background-color: #F4F5FF;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "theImage theContent";
+    grid-template-columns: 80px auto;
+    margin-bottom: 20px;
+
+    .Image {
+        width: 80px;
+        height: 80px;
+        background: #D0E3FF;
+        border-radius: 50%;
+        grid-area: theImage;
+
+        img {
+            padding: 18px;
+        }
+    }
+    .Content {
+        grid-area: theContent;
+        margin-right: 10px;
+
+        .Title {
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'fontbase';
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .Description {
+            font-size: 16px;
+            color: #666;
+        }
+    }
+}
