@@ -8,8 +8,8 @@ const FrontpageHeader = ( { title, subtitle, description, CTAlinkOne, CTAtextOne
         <h1 className="title">{ title }</h1>
         <p className="description">{ description }</p>
         <div className="CTA">
-            <button><Link to={ CTAlinkOne}>{ CTAtextOne}</Link></button>
-            <button><Link to={ CTAlinkTwo }>{ CTAtextTwo }</Link></button>
+            <button className="btn-secondary"><Link to={ CTAlinkOne}>{ CTAtextOne}</Link></button>
+            <button className="btn-secondary-outline"><Link to={ CTAlinkTwo }>{ CTAtextTwo }</Link></button>
         </div>
 
     </div>

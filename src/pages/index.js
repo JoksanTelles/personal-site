@@ -23,7 +23,7 @@ const IndexPage = () => (
 
             </FrontpageHero>
 
-            <FrontpageAbout>lorem ipsum dolor sit amet</FrontpageAbout>
+            <FrontpageAbout />
         </main>
 
         <Footer />
