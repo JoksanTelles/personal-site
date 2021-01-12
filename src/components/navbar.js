@@ -5,71 +5,92 @@ import IconBlog from "./icons/iconBlog.js"
 import IconAbout from "./icons/iconAbout.js"
 import IconPortfolio from "./icons/iconPortfolio.js"
 import IconContact from "./icons/iconContact.js"
-import BrandBehance from "./icons/brandBehance.js"
-import BrandCodepen from "./icons/brandCodepen.js"
 import BrandGithub from "./icons/brandGithub.js"
 import BrandLinkedin from "./icons/brandLinkedin.js"
-import BrandYoutube from "./icons/brandYoutube.js"
 
 const Navbar = () => (
-    <header className="navbar">
+    <header className="Navbar">
         <div className="container">
-            <div className="left">
 
-                <Link to="/">
-                    <Logo />
-                </Link>
+            <Link to="/" className="Logo">
+                <Logo />
+            </Link>
 
-                <div className="social">
+            <SocialMedia>
 
-                    <a target="_blank" href="https://www.youtube.com/">
-                        <BrandYoutube />
-                    </a>
+                <SocialIcon
+                    link="https://github.com/JoksanTelles/"
+                    icon={ <BrandGithub /> } />
+                <SocialIcon
+                    link="https://www.linkedin.com/in/joksantelles/"
+                    icon={ <BrandLinkedin /> } />
 
-                    <a target="_blank" href="https://www.behance.net/JoksanTelles">
-                        <BrandBehance />
-                    </a>
-
-                    <a target="_blank" href="https://codepen.io/JoksanTelles/">
-                        <BrandCodepen />
-                    </a>
-
-                    <a target="_blank" href="https://github.com/JoksanTelles/">
-                        <BrandGithub />
-                    </a>
-
-                    <a target="_blank" href="https://www.linkedin.com/in/joksantelles/">
-                        <BrandLinkedin />
-                    </a>
-
-                </div>
-                
-            </div>
+            </SocialMedia>
             
+            <NavLinks>
+
+                <NavItem
+                    link="/blog/"
+                    linkText="Blog"
+                    icon={ <IconBlog/> } />
+
+                <NavItem
+                    link="/about/"
+                    linkText="About"
+                    icon={ <IconAbout/> } />
+
+                <NavItem
+                    link="/portfolio/"
+                    linkText="Portfolio"
+                    icon={ <IconPortfolio/> } />
+
+                <NavItem
+                    link="/contact/"
+                    linkText="Contact"
+                    icon={ <IconContact/> } />
+
+            </NavLinks>
             
-            <nav>
-                <ul>
-
-                    <li><Link to="/blog/">
-                        <IconBlog /> Blog
-                    </Link></li>
-
-                    <li><Link to="/about/">
-                        <IconAbout /> About
-                    </Link></li>
-
-                    <li><Link to="/portfolio/">
-                        <IconPortfolio /> Portfolio
-                    </Link></li>
-
-                    <li><Link to="/contact/">
-                        <IconContact /> Contact
-                    </Link></li>
-
-                </ul>
-            </nav>
         </div>
+        
     </header>
 )
+
+
+// Navigation links - Block
+function NavLinks({ children }) {
+    return (
+        <nav className="NavLinks">{children}</nav>
+    )
+}
+
+// Navigation links - Items
+function NavItem( { link, linkText, icon }) {
+    return (
+
+            <Link to={ link } className="btn-soft">
+
+                { icon }{ linkText }
+
+            </Link>
+    )
+}
+
+// Social Icons - Block
+function SocialMedia( props ) {
+    return (
+        <div className="Social">{ props.children }</div>
+    )
+}
+
+// Social Icons - Element
+function SocialIcon({ link, icon }) {
+    return (
+        <a href={ link } target="_blank" rel="noreferrer">
+            { icon }
+        </a>
+    )
+}
+
 
 export default Navbar;

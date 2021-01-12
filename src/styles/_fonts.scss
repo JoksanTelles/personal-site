@@ -1,4 +1,20 @@
-// Font base - Extra Bold
+
+// Font Base
+/*
+ * FONTBASE
+ * Open sans (regular and italic)
+ * 800, 700, 600, 400, 300
+ *
+ * FONTEXTRA
+ * Merriweather (regular and italic)
+ * 900, 700, 400, 300
+ */
+
+/* -------------------------------------------------
+    # Font Base
+   -------------------------------------------------*/
+
+// Font base - Extra Bold (800)
 @font-face {
     font-family: "fontbase";
     src: url("../fonts/OpenSans-ExtraBold.ttf");
@@ -11,7 +27,7 @@
     font-style: italic;
 }
 
-// Font base - Bold
+// Font base - Bold (700)
 @font-face {
     font-family: "fontbase";
     src: url("../fonts/OpenSans-Bold.ttf");
@@ -24,7 +40,7 @@
     font-style: italic;
 }
 
-// Font base - Semi Bold
+// Font base - Semi Bold (600)
 @font-face {
     font-family: "fontbase";
     src: url("../fonts/OpenSans-SemiBold.ttf");
@@ -37,7 +53,7 @@
     font-style: italic;
 }
 
-// Font base - Regular
+// Font base - Regular (400)
 @font-face {
     font-family: "fontbase";
     src: url("../fonts/OpenSans-Regular.ttf");
@@ -50,7 +66,7 @@
     font-style: italic;
 }
 
-// Font base - Ligth
+// Font base - Ligth (300)
 @font-face {
     font-family: "fontbase";
     src: url("../fonts/OpenSans-Light.ttf");
@@ -59,6 +75,61 @@
 @font-face {
     font-family: "fontbase";
     src: url("../fonts/OpenSans-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* -------------------------------------------------
+    # Font Extra
+   -------------------------------------------------*/
+
+// Font extra - Black (900)
+@font-face {
+    font-family: "fontextra";
+    src: url("../fonts/Merriweather-Black.ttf");
+    font-weight: 900;
+}
+@font-face {
+    font-family: "fontextra";
+    src: url("../fonts/Merriweather-BlackItalic.ttf");
+    font-weight: 900;
+    font-style: italic;
+}
+
+// Font extra - Bold (700)
+@font-face {
+    font-family: "fontextra";
+    src: url("../fonts/Merriweather-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "fontextra";
+    src: url("../fonts/Merriweather-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+// Font extra - Regular (400)
+@font-face {
+    font-family: "fontextra";
+    src: url("../fonts/Merriweather-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "fontextra";
+    src: url("../fonts/Merriweather-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+// Font extra - Ligth (300)
+@font-face {
+    font-family: "fontextra";
+    src: url("../fonts/Merriweather-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "fontextra";
+    src: url("../fonts/Merriweather-LightItalic.ttf");
     font-weight: 300;
     font-style: italic;
 }

@@ -4,11 +4,15 @@ import Footer from '../components/footer'
 import FrontpageAbout from '../layouts/frontpage-about'
 import FrontpageHero from '../layouts/frontpage-hero'
 import FrontpageHeader from '../components/frontpage-header'
+import FrontpagePortfolio from '../layouts/frontpage-portfolio'
+import PortfolioProject from '../components/portfolio-project'
 
 // markup
 const IndexPage = () => (
     <div>
-        <Navbar />
+        <Navbar>
+            
+        </Navbar>
 
         <main className="FrontPage">
 
@@ -24,6 +28,14 @@ const IndexPage = () => (
             </FrontpageHero>
 
             <FrontpageAbout />
+
+            <FrontpagePortfolio>
+                <PortfolioProject
+                    date="225101"
+                    title="Open AI's Hide-and-Seek the Systems Perspectives"
+                    description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English." />
+            </FrontpagePortfolio>
+
         </main>
 
         <Footer />
