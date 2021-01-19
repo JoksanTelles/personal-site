@@ -1,13 +1,15 @@
 import React from 'react'
+import HeroImage from '../images/frontpage__hero-illustration'
 
 const FrontpageHero = ( {children} ) => (
     <header className="FrontpageHero">
 
-        <div className="grid Container">
+        <div className="grid">
 
-            <div className="margin"></div>
             { children }
-            <div className="margin"></div>
+            <div className="illustration">
+                <HeroImage />
+            </div>
         
         </div>
 

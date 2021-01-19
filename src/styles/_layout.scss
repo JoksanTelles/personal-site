@@ -1,3 +1,5 @@
+@import '_elements.scss';
+
 /*
   1. Navbar
   ├─ 
@@ -25,39 +27,91 @@
    # Navbar - Layout
 ----------------------------------------------------*/
 .Navbar {
-    background-color: #ffffffcc;
-    backdrop-filter: blur(2px);
-    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: auto;
+    width: 100%;
     position: fixed;
     z-index: 1000;
-    transition: background-color 500ms;
 
     .container {
-        display: grid;
-        gap: 30px;
-        grid-template-areas:
-            "Logo Social NavLinks";
-        grid-template-columns: 165px auto auto;
-        width: 100%;
-        max-width: 1200px;
+        background-color: #ffffffcc;
+        backdrop-filter: blur(2px);
+        transition: background-color 500ms;
+        padding: 15px 25px;
+        display: flex;
+        width: 100%;        
+    }
 
-        .Logo {
-            grid-area: Logo;
-        }
+    .Logo {
+        display: flex;
+        align-items: center;
+    }
+    .Menu {
+        margin-left: auto;
+    }
+    .Navigation {
+        display: none;
+    }
+    
+
+
+    .MobileNavigation {
+        display: none;
+        //transition: translateY(0px);
+    }
+}
+.Navbar .container:hover {
+    background-color: white;
+}
+
+.Navbar.Open .MobileNavigation {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+    width: 280px;
+    background-color: #ffffffcc;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 20px;
+    gap: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .Navbar.Open .MobileNavigation,
+    .MobileNavigation,
+    .Navbar .Menu {
+        display: none;
+    }
+
+    .Navbar .container {
+        padding: 15px 30px;
+    }
+
+    .Navbar .Navigation {
+        display: flex;
+        width: 100%;
+
         .Social {
-            grid-area: Social;
-        }
-        .NavLinks {
-            grid-area: NavLinks;
+            display: none;
         }
     }
 }
-.Navbar:hover {
-    background-color: white;
+
+@media screen and (min-width: 1024px) {
+    .Navbar .container {
+        padding: 15px 40px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .Navbar .container {
+        padding: 15px 80px;
+    }
 }
 
 /* -------------------------------------------------
@@ -72,6 +126,10 @@
     align-items: center;
 }
 
+/* -------------------------------------------------
+   # Front-Page - Layout
+----------------------------------------------------*/
+
 // Frontpage Hero
 .FrontpageHero {
     height: 100%;
@@ -83,23 +141,76 @@
 
     .grid {
         z-index: 20;
-        margin: auto;
+        margin: 60px auto;
         display: grid;
-        align-content: end;
-        grid-column: 12;
-        grid-template-areas:
-            "one two three";
-        grid-template-columns: 1fr 5fr 6fr;
+        grid-template-rows: repeat(2, 1fr);
     
-        .margin:nth-child(1) { grid-area: one; }
-        .content { grid-area: two; }
-        .margin:nth-child(2) { grid-area: three; }
+        .FrontpageHeader {
+            grid-row: 2 / 3;
+        }
+        .illustration {
+            grid-row: 1 / 2;
+        }
+    }
+
+    .illustration {
+        margin: auto;
+    }
+    .FrontpageHeader {
+        max-width: 500px;
+        padding: 0 25px;
+        position: relative;
+        top: -20px;
     }
     
 }
+@media screen and (max-width: 480px) {
+    .FrontpageHero .illustration {
+        padding-left: 10%;
+    }
+}
+
+// Resizing illustration on devices less than 360px
+@media screen and (max-width: 360px) {
+    .FrontpageHero .illustration svg {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .FrontpageHero .grid {
+        gap: 30px;
+        max-width: 1200px;
+        margin: 120px auto 80px;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(12, 1fr);
+
+        .FrontpageHeader {
+            grid-row: 1 / 2;
+            grid-column: 2 / 7;
+        }
+        .illustration {
+            grid-row: 1 / 2;
+            grid-column: 7 / 13;
+        }
+    }
+    .FrontpageHero .FrontpageHeader {
+        top: 0;
+        padding: 0;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* -------------------------------------------------
+   # Front-Page - Layout
+----------------------------------------------------*/
 
 // Front-page About
 .FrontpageAbout {
+    display: none;
     padding: 100px 0;
 
     .grid {
@@ -129,8 +240,13 @@
 
 }
 
+/* -------------------------------------------------
+   # Front-Page - Layout
+----------------------------------------------------*/
+
 // Front-page Portfolio
 .FrontpagePortfolio {
+    display: none;
     .Container {
         display: grid;
         gap: 30px;

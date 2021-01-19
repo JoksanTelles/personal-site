@@ -10,3 +10,124 @@ p, blockquote, div, span {
 h1, h2, h3 {
     font-family: 'Open sans', sans-serif;
 }
+
+h1 { font-size: 36px; }
+
+// Colors
+:root {
+    --color-primary:          #0D6EFD;
+    --color-primary-accent:   #3f8afb;
+    --color-primary-100:      #F4F5FF;
+    --color-primary-200:      #D0E3FF;
+    --color-primary-300:      #5f9fff;
+    --color-primary-400:      #3f8afb;
+    --color-secondary:        #212121;
+    --color-secondary-accent: #3b3b3b;
+    --color-secondary-100:    #e4e4e4;
+    --color-secondary-200:    #9b9b9b;
+    --color-secondary-300:    #666666;
+    --color-secondary-400:    #3b3b3b;
+}
+
+/* -------------------------------------------------
+   # Elements
+----------------------------------------------------*/
+
+// Buttons
+.button {
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 500ms, border-color 500ms;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        font-size: 14px
+    }
+}
+
+// Button primary
+.btn-primary {
+    @extend .button;
+    background-color: var(--color-primary);
+    border: 2px var(--color-primary) solid;
+    color: white;
+
+    a { color:white; }
+}
+.btn-primary:hover {
+    background-color: var(--color-primary-accent);
+    border: 2px var(--color-primary-accent) solid;
+}
+
+// Button primary outline
+.btn-primary-outline {
+    @extend .btn-primary;
+    background-color: transparent;
+    color: var(--color-primary);
+
+    a {
+        color: var(--color-primary);
+    }
+}
+.btn-primary-outline:hover {
+    background-color: var(--color-primary-100);
+}
+
+// Button secondary
+.btn-secondary {
+    @extend .button;
+    background-color: var(--color-secondary);
+    border: 2px var(--color-secondary) solid;
+    color: white;
+    
+    a { color:white; }
+}
+.btn-secondary:hover {
+    background-color: var(--color-secondary-accent);
+    border: 2px var(--color-secondary-accent) solid;
+}
+
+// Button secondary outline
+.btn-secondary-outline {
+    @extend .btn-secondary;
+    background-color: transparent;
+    color: var(--color-secondary);
+
+    a {
+        color: var(--color-secondary);
+    }
+}
+.btn-secondary-outline:hover {
+    background-color: var(--color-secondary-100);
+}
+
+// Button soft
+.btn-soft {
+    @extend .button;
+    font-weight: 600;
+    color: gray;
+
+    .icon {
+        margin-top: 1px;
+        width: 16px;
+        stroke-width: 2.5px;
+        margin-right: 5px;
+    }
+}
+.btn-soft:hover {
+    background-color: var(--color-primary-200);
+    color: var(--color-primary);
+}
+.btn-small {
+    display: inline-flex;
+    text-transform: capitalize;
+    height: 30px;
+    padding: 0 15px;
+    background-color: var(--color-primary-100);
+    color: var(--color-primary);
+}
