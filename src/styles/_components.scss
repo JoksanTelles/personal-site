@@ -147,7 +147,7 @@
         margin-right: 10px;
     }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     .FrontpageHeader {
         .title {
             font-size: 22px;
@@ -310,6 +310,8 @@
 
 // Frontpage Heading
 .FrontpageHeading {
+    max-width: 450px;
+
     .title {
         font-size: 20px;
         font-weight: 400;
@@ -327,7 +329,8 @@
         color: #808080;
     }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
+    .FrontpageHeading { max-width: none; }
     .FrontpageHeading .title {
         font-size: 22px;
     }
@@ -342,39 +345,70 @@
 .FrontpageCard {
     background-color: #F4F5FF;
     border-radius: 10px;
-    padding: 30px;
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-        "theImage theContent";
-    grid-template-columns: 80px auto;
-    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
 
     .Image {
         width: 80px;
         height: 80px;
         background: #D0E3FF;
         border-radius: 50%;
-        grid-area: theImage;
+        margin-bottom: 20px;
+        margin-top: 5px;
 
         img {
             padding: 18px;
         }
     }
-    .Content {
-        grid-area: theContent;
-        margin-right: 10px;
+    .Content { padding-left: 5px; }
+    .Title {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: 'fontbase';
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .Description {
+        font-size: 14px;
+        color: #666;
+    }
+}
+@media screen and (min-width: 576px) {
+    .FrontpageCard {
+        display: flex;
+        flex-direction: row;
+        max-width: 600px;
 
+        .Image {
+            margin-right: 10px;
+            margin-top: 0;
+        }
         .Title {
             font-size: 20px;
-            font-weight: 700;
-            font-family: 'fontbase';
-            margin-top: 5px;
-            margin-bottom: 10px;
+            margin-top: 10px;
         }
-        .Description {
-            font-size: 16px;
-            color: #666;
+        .Description { font-size: 16px; }
+        .Content { margin-right: 10px; }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .FrontpageCard {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            "theImage theContent";
+        grid-template-columns: 80px auto;
+        margin-bottom: 20px;
+        max-width: 100%;
+
+        .Image {
+            grid-area: theImage;
+        }
+        .Content {
+            grid-area: theContent;
+            margin-right: 10px;
         }
     }
 }
@@ -401,6 +435,7 @@
         width: 100%;
         height: 400px;
     }
+    
 }
 .PortfolioProject .date {
     display: flex;

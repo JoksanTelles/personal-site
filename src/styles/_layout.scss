@@ -210,36 +210,74 @@
 
 // Front-page About
 .FrontpageAbout {
-    display: none;
-    padding: 100px 0;
+    padding: 10px 0;
+    width: 100%;
 
     .grid {
-        display: grid;
-        gap: 30px;
-        row-gap: 0;
-        grid-template-columns: repeat(12, 1fr);
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 0 25px;
     }
-
-    .FrontpageHeading {
-        grid-row: 1 / 2;
-        grid-column:    1 / 5;
-    }
-    .FrontpageCard.One {
-        grid-row:    1 / 2;
-        grid-column: 7 / 13;
-        margin-top: 35px;
-    }
-    .FrontpageCard.Two {
-        grid-row:    2 / 3;
-        grid-column: 6 / 12;
-    }
-    .FrontpageCard.Three {
-        grid-row:    3 / 4;
-        grid-column: 5 / 11;
-    }
-
+    .FrontpageCard.One { margin: 0 0 15px auto; }
+    .FrontpageCard.Two { margin: 0 auto 15px auto; }
+    .FrontpageCard.Three { margin: 0 auto 15px 0; }
 }
 
+@media screen and (min-width: 576px) {
+    .FrontpageAbout {
+        .FrontpageCard.One { margin: 0 0 25px auto; }
+        .FrontpageCard.Two { margin: 0 auto 25px auto; }
+        .FrontpageCard.Three { margin: 0 auto 25px 0; }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .FrontpageAbout {
+        .FrontpageHeading {
+            max-width: 400px;
+        }
+        .grid { margin: 0 30px; }
+        .FrontpageCard.One { margin: 0 0 35px auto; }
+        .FrontpageCard.Two { margin: 0 auto 35px auto; }
+        .FrontpageCard.Three { margin: 0 auto 35px 0; }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .FrontpageAbout {
+        .grid {
+            margin: 0 40px;
+            display: grid;
+            max-width: 1200px;
+            gap: 30px;
+            row-gap: 0;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    
+        .FrontpageHeading {
+            grid-row: 1 / 2;
+            grid-column:    1 / 5;
+        }
+        .FrontpageCard.One {
+            grid-row:    1 / 2;
+            grid-column: 7 / 13;
+            margin-top: 35px;
+        }
+        .FrontpageCard.Two {
+            grid-row:    2 / 3;
+            grid-column: 6 / 12;
+        }
+        .FrontpageCard.Three {
+            grid-row:    3 / 4;
+            grid-column: 5 / 11;
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .FrontpageAbout .grid { margin: 0 80px; }
+}
 /* -------------------------------------------------
    # Front-Page - Layout
 ----------------------------------------------------*/

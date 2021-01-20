@@ -14,10 +14,10 @@ import BrandCodepen from "./icons/brandCodepen.js"
 const Navbar = () => {
 
     // Yep, here's the Navbar Responsive state :P
-    const [nav, navOpen] = useState(false)
+    const [navigation, navigationOpen] = useState(false)
 
     return (
-        <header className={ nav ? "Navbar" : "Navbar Open"}>
+        <header className={ navigation ? "Navbar Open" : "Navbar"}>
             <div className="container">
 
                 <Link to="/" className="Logo">
@@ -65,7 +65,7 @@ const Navbar = () => {
                 
 
                 <button
-                    onClick={() => navOpen(!nav)}
+                    onClick={() => navigationOpen(!navigation)}
                     className="Menu">
 
                     <IconMenu />

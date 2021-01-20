@@ -8,7 +8,7 @@ import FrontpageCard from '../components/frontpage-card'
 const Page = ( { children } ) => (
     <section className="FrontpageAbout">
 
-        <div className="grid Container">
+        <div className="grid">
 
             <FrontpageHeadindg
                 title="Web designer and developer"
