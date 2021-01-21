@@ -212,6 +212,7 @@
 .FrontpageAbout {
     padding: 10px 0;
     width: 100%;
+    margin-bottom: 80px;
 
     .grid {
         display: flex;
@@ -284,21 +285,51 @@
 
 // Front-page Portfolio
 .FrontpagePortfolio {
-    display: none;
-    .Container {
-        display: grid;
-        gap: 30px;
-        row-gap: 0px;
-        grid-template-columns: repeat(12, 1fr);
-        
-        .FrontpageHeading {
-            grid-row:    1 / 2;
-            grid-column: 1 / 5;
-            margin-bottom: 50px;
+    margin: 25px;
+
+    .FrontpageHeading {
+        margin-bottom: 100px;
+    }
+    .PortfolioProjects
+    .PortfolioProject {
+        margin-bottom: 60px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .FrontpagePortfolio {
+        .Container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: auto auto;
+
+            .FrontpageHeading {
+                grid-row:    1 / 2;
+                grid-column: 2 / 7;
+            }
+            .PortfolioProjects {
+                grid-row:    2 / 3;
+                grid-column: 1 / 9;
+            }
         }
-        .PortfolioProjects {
-            grid-row:    2 / 3;
-            grid-column: 1 / 13;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .FrontpagePortfolio {
+        .Container {
+            display: grid;
+            gap: 30px;
+            margin: 25px;
+            row-gap: 0px;
+            grid-template-columns: repeat(12, 1fr);
+            
+            .FrontpageHeading {
+                grid-row:    1 / 2;
+                grid-column: 1 / 5;
+            }
+            .PortfolioProjects {
+                grid-row:    2 / 3;
+                grid-column: 1 / 13;
+            }
         }
     }
 }
