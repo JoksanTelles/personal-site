@@ -1,13 +1,15 @@
 import React from 'react'
 
 const PageHeader = ( { title, subtitle, description } ) => (
-    <header className="page--header">
+    <header className="PageHeader">
 
-        <div className="content">
+        <div className="container">
+
             <p className="tag">{ subtitle }</p>
             <div className="division"></div>
             <h1 className="title">{ title }</h1>
             <p className="description">{ description }</p>
+
         </div>
         
         <div className="background">
