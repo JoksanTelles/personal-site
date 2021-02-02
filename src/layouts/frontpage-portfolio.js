@@ -5,9 +5,9 @@ const FrontpagePortfolio = ( { children } ) => (
     <section className="FrontpagePortfolio">
         <div className="Container">
             <FrontpageHeading
-                title="Portfolio"
-                subtitle="I help you build and grow your business through clever brands, digital experiences and products."
-                description="Exploring the differents paths of design, firtsly understand what components need to design." />
+                title="Portafolio"
+                subtitle="Construyo y desarrollo negocios a través de branding, diseño de producto y experiencias digitales."
+                description="Explora los diferentes caminos de diseño que he tomado para construir negocios como el tuyo." />
             <div className="PortfolioProjects">{ children }</div>
         </div>
     </section>

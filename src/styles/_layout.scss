@@ -654,3 +654,28 @@
         }
     }
 }
+
+/* -------------------------------------------------
+   # Portfolio Page - Layout
+----------------------------------------------------*/
+
+// Front-page Portfolio
+.Portfolio {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+@media screen and (min-width: 768px) {
+    .Portfolio {
+        margin: 30px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .Portfolio {
+        margin: 40px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .Portfolio { margin: 50px; max-width: 1200px;}
+}

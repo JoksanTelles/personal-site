@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/navbar'
-import PageHeader from '../components/page-header'
-import Footer from '../components/footer'
-import CardLevel from '../components/CardLevel'
+import Navbar from '../../components/navbar'
+import PageHeader from '../../components/page-header'
+import Footer from '../../components/footer'
+import CardLevel from '../../components/CardLevel'
 
 const About = () => (
     
@@ -11,9 +11,9 @@ const About = () => (
         <Navbar />
 
         <PageHeader
-            title="Front-End Developer and UI/UX Designer based in México."
-            subtitle="About"
-            description="I love create digital products based on strategy, design and code. My principles are based on essentialism: make more, doing less. " />
+            title="Desarrollador Front-End y Diseñador UI/UX"
+            subtitle="Sobre mí"
+            description="Me encanta crear productos digitales basados en estrategia, diseño y código. Mis principios están basados en el minimalismo: haz más haciendo menos." />
 
         <main className="AboutPage">
             <div className="twocolumn">
@@ -21,13 +21,15 @@ const About = () => (
                 <div className="container">
 
                     <div className="one">
-                        <h3 className="title">I love to create digital experiences based on human beign emotions and behaviour.</h3>
+                        <h3 className="title">Me encanta crear experiencias digitales basadas en las emociones y el comportamiento humano.</h3>
                     </div>
 
                     <div className="two">
-                        <p>I love create digital products based on strategy, design and code. My principles are based on essentialism: make more, doing less.</p>
-                        <p>I value processes, and I create my own workflow for anything to constantly improve not just my work, but my life.</p>
-                        <p>I enjoy reading blogs and watching videos everyday to learn and improve my life on topics like SEO, Marketing, Design, Development and even Healthcare and Workout. I never stop learning, every day is a oportunity to lern something new.</p>
+                        <p>Amo crear productos digitales basados en diseño y código limpio. Valoro los procesos y crear mi propio flujo de trabajo para simplificar cualquier cosa, no solo mi trabajo, sino además mi vida en general.</p>
+
+                        <p>Disfruto leyendo blogs y viendo videos todos los días para aprender y mejorar en lo que sea posible. A veces me encontraré aprendiendo sobre SEO, Marketing, Diseño, Desarrollo e incluso temas pocos relacionados con mi trabajo como desarrollo de videojuegos, rutina de ejercicios y alimentación saludable.</p>
+
+                        <p>Nunca me detengo de aprender. Cada día es una nueva oportunidad para aprender algo nuevo.</p>
                     </div>
 
                 </div>
@@ -36,26 +38,26 @@ const About = () => (
             <div className="threecolumn">
                 <div className="container">
                     <TitleThreeColumn
-                        Title="Experience" />
+                        Title="Experiencia" />
 
                     <div className="two">
                         <ExperienceCard
-                            Title="Ideas Eficaces | Graphic Designer"
-                            Date="From July 2017 to December 2017"
+                            Title="Ideas Eficaces | Diseñador gráfico"
+                            Date="De Julio 2017 a Diciembre 2017"
                             URL="http://www.ideaseficaces.mx/"
-                            Description="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy." />
+                            Description="Mucho de mi trabajo era sacar diseños rápidos para una empresa que se dedicaba a la imprenta en serigrafía y sublimación. Mi trabajo como diseñador iba de hacer 3 a 5 diseños diarios en los días más ligeros o de 15 a 30 en los días más cansados." />
                         <ExperienceCard
-                            Title="Freelancer | Designer, Developer and Illustrator"
-                            Date="From January 2018 to February 2020"
+                            Title="Freelancer | Diseñador, desarrollador e  ilustrador"
+                            Date="De Enero 2018 a Febrero 2020"
                             URL="https://joksantelles.com"
-                            Description="The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English." />
+                            Description="Siendo freelance hice muchos tipos de trabajo, desde desarrollo de personajes, diseño de sitios web con WordPress, diseño de identidad corporativa, pero la gran mayoría de mi trabajo era crear cartelería y flyers para publicidad. Además de adquirir experiencia en diseño también obtuve mucha experiencia en los negocios." />
                         
                         
                     </div>
                     <div className="three">
                         <ExperienceCard
-                            Title="Plug In Marketing | Designer and Developer"
-                            Date="From March 2020 to Currently"
+                            Title="Plug In Marketing | Diseñador y desarrollador"
+                            Date="De Marzo 2020 a la actualidad"
                             URL="http://pluginmarketing.com"
                             Description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." />
                     </div>
@@ -65,18 +67,18 @@ const About = () => (
             <div className="threecolumn">
                 <div className="container">
                     <TitleThreeColumn
-                        Title="Education" />
+                        Title="Educación" />
                     <div className="two">
                         <ExperienceCard
-                            Title="Graphic Design - Computación del Golfo"
-                            Date="From July 2016 to January 2018"
+                            Title="Diseño gráfico - Computación del Golfo"
+                            Date="De Julio 2016 a Enero 2018"
                             URL="https://www.cg.edu.mx"
                             Description="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy." />
                     </div>
                     <div className="three">
                         <ExperienceCard
                             Title="UI/UX Design - Zero To Mastery"
-                            Date="From August 2020 to December 2020"
+                            Date="De Agosto 2020 a Diciembre 2020"
                             URL="https://zerotomastery.io/"
                             Description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." />
                     </div>

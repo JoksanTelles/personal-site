@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PortfolioProject = ( { date, link, title, linkCategory, category, description, image } ) => (
+const PortfolioProject = ( { date, link, title, linkCategory, category, description, image, imageAlt } ) => (
     <article className="PortfolioProject">
         <div className="date">
             <div className="divisor"></div>
@@ -13,7 +13,7 @@ const PortfolioProject = ( { date, link, title, linkCategory, category, descript
             <p className="description">{ description }</p>
 
         </div>
-        <div className="image">{ image }</div>
+        <div className="image"><img src={ image } alt={ imageAlt} /></div>
     </article>
 )
 export default PortfolioProject

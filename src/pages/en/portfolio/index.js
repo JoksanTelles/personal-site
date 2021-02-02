@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../../components/navbar'
-import PageHeader from '../../components/page-header'
-import Footer from '../../components/footer'
+import Navbar from '../../../components/navbar'
+import PageHeader from '../../../components/page-header'
+import Footer from '../../../components/footer'
 
 const Portfolio = () =>
 (

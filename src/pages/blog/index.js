@@ -7,9 +7,9 @@ const Blog = () => (
     <div>
         <Navbar/>
         <PageHeader
-            title="Sharign what I love learn"
+            title="Compartiendo cositas :)"
             subtitle="Blog"
-            description="I help you build and grow your business through clever brands, digital experiences and products." />
+            description="En este espacio me encontrarás compartiendo contenido de valor ya sea de diseño, desarrollo o incluso temas off-topic." />
         <Footer />
     </div>
 )

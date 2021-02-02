@@ -11,7 +11,7 @@ import BrandLinkedin from "./icons/brandLinkedin.js"
 import BrandDribbble from "./icons/brandDribbble.js"
 import BrandCodepen from "./icons/brandCodepen.js"
 
-const Navbar = () => {
+const Navbar = ( { blog, blogLink, about, aboutLink, portfolio, portfolioLink } ) => {
 
     // Yep, here's the Navbar Responsive state :P
     const [navigation, navigationOpen] = useState(false)
@@ -45,18 +45,18 @@ const Navbar = () => {
                             icon={ <IconBlog/> } />
 
                         <NavItem
-                            link="/about/"
-                            linkText="About"
+                            link="/sobre-mi/"
+                            linkText="Sobre mí"
                             icon={ <IconAbout/> } />
 
                         <NavItem
-                            link="/portfolio/"
-                            linkText="Portfolio"
+                            link="/portafolio/"
+                            linkText="Portafolio"
                             icon={ <IconPortfolio/> } />
 
                         <NavItem
-                            link="/contact/"
-                            linkText="Contact"
+                            link="/contacto/"
+                            linkText="Contacto"
                             icon={ <IconContact/> } />
 
                     </NavLinks>
