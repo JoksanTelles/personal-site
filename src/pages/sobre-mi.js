@@ -3,10 +3,22 @@ import Navbar from '../components/navbar'
 import PageHeader from '../components/page-header'
 import Footer from '../components/footer'
 import CardLevel from '../components/CardLevel'
+import { Helmet } from 'react-helmet'
 
 const About = () => (
     
-    <div>
+    <>
+        <Helmet
+            htmlAttributes={{
+                lang: 'es-MX',
+            }}
+            title='Sobre mí | Joksan Télles'
+            meta={[
+                { name: 'description', content: 'Soy Joksan Télles, Desarrollador Front-End y Diseñador UI/UX' },
+                { name: 'keywords', content: 'diseño, desarrollo, website, ui/ux, sobre mí' },
+                { name: 'robots', content: 'index,follow' },
+            ]}
+        />
 
         <Navbar />
 
@@ -179,7 +191,7 @@ const About = () => (
         </main>
         
         <Footer />
-    </div>
+    </>
 )
 
 // Title for ThreeColumn - Component
@@ -197,7 +209,7 @@ function ExperienceCard( { Title, Date, URL, Description} ) {
         <div className="ExperienceCard">
             <h4 className="title">{ Title }</h4>
             <span className="date">{ Date }</span>
-            <a className="url" href={ URL } rel="nofollow" target="_blank">{ URL }</a>
+            <a className="url" href={ URL } rel="noreferrer" target="_blank">{ URL }</a>
             <p className="description">{ Description }</p>
         </div>
     )

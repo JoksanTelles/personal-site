@@ -39,7 +39,7 @@
     .container {
         background-color: #ffffffcc;
         backdrop-filter: blur(2px);
-        transition: background-color 500ms;
+        transition: background-color 300ms;
         padding: 15px 25px;
         display: flex;
         width: 100%;        
@@ -105,6 +105,9 @@
 @media screen and (min-width: 1024px) {
     .Navbar .container {
         padding: 15px 40px;
+    }
+    .Navbar .Navigation {
+        .Social { display: flex; }
     }
 }
 
@@ -321,6 +324,7 @@
             margin: 25px;
             row-gap: 0px;
             grid-template-columns: repeat(12, 1fr);
+            max-width: 1200px;
             
             .FrontpageHeading {
                 grid-row:    1 / 2;

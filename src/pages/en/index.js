@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../../components/navbar'
+import Navbar from '../../components/navbar-en'
 import Footer from '../../components/footer'
 import FrontpageHero from '../../layouts/frontpage-hero'
 import FrontpageHeader from '../../components/frontpage-header'
@@ -10,10 +10,22 @@ import SEOIcon from '../../images/frontpage__seo.svg'
 import SpeedIcon from '../../images/frontpage__speed.svg'
 import FrontpageHeadindg from '../../components/frontpage-heading'
 import FrontpageCard from '../../components/frontpage-card'
+import { Helmet } from 'react-helmet'
 
 // markup
 const IndexPage = () => (
-    <div>
+    <>
+        <Helmet
+            htmlAttributes={{
+                lang: 'en-US',
+            }}
+            title='Joksan Telles | Front-End Developer &amp; UI/UX Designer'
+            meta={[
+                { name: 'description', content: 'I\'m Joksan Télles, Designer & Developer based in Veracruz city, México.' },
+                { name: 'keywords', content: 'design, develop, website, ui/ux, about me' },
+                { name: 'robots', content: 'index,follow' },
+            ]}
+        />
         <Navbar />
 
         <main className="FrontPage">
@@ -21,39 +33,39 @@ const IndexPage = () => (
             <FrontpageHero>
 
                 <FrontpageHeader
-                    title="Me llamo Joksan Télles, y soy diseñador y desarrollador en la ciudad de Veracruz, México :D"
-                    subtitle="Hola"
-                    description="Disfruto desarrollando trabajos de branding, diseño de producto de manera estratégica trabajando con personas apasionadas. Me encanta diseñar enfocado al usuario creando diseños fáciles de usar."
-                    CTAlinkOne="/portfolio/" CTAtextOne="Mis proyectos"
-                    CTAlinkTwo="/about/"     CTAtextTwo="Sobre mí" />
+                    title="I'm Joksan Télles, a Designer and Developer based in Veracruz city, México."
+                    subtitle="Hello"
+                    description="I enjoy developing work on branding, product design working strategically with passionate people. I love design focused on user making simple-to-use designs."
+                    CTAlinkOne="/en/portfolio/" CTAtextOne="My projects"
+                    CTAlinkTwo="/en/about/"     CTAtextTwo="About me" />
 
             </FrontpageHero>
 
             <FrontpageAbout>
                 <FrontpageHeadindg
-                    title="Diseñador y desarrollador web"
-                    subtitle="Me especializo en diseñar experiencias digitales."
-                    description="Mi propósito es ser tu guía que lleve tu idea al desarrollo de tu sitio web basado en la estrategia y desarrollo que tu equipo tiene en mente."/>
+                    title="Web designer and developer"
+                    subtitle="I am specialized designing digital experiences."
+                    description="My main purpose is guide you to develop your dream website design based on strategy and develop what your team have in mind."/>
 
                 <FrontpageCard
                     image={ LowcostIcon }
                     imageAlt="Lowcost Icon"
-                    title="Mantenimiento a bajo costo"
-                    description="Sea un CMS o un SSG, tu sitio web tendrá un bajo costo de mantenimiento porque muchas de las tareas más cotidianas, como actualizaciones de páginas, las podrás hacer tú sin saber absolutamente nada de código."
+                    title="Low cost mantainance"
+                    description="Either a CMS or SSG website, you will get a low cost mantainance for that kind of websites. You could update your content by your own with an easy-to-use way to manage your content and you won't need to pay for easy updates."
                     className="FrontpageCard One" />
 
                 <FrontpageCard
                     image={ SpeedIcon }
                     imageAlt="Speed Icon"
-                    title="Sitio web veloz"
-                    description="Optimizaré tu sitio web para que tenga un alto performance usando las mejores prácticas de desarrollo. Tu sitio web será bien optimizado y no tendrás que preocuparte por ello."
+                    title="Fastest website"
+                    description="I'll optimized the performance with best practices for web development, and your website will be accelerated by purpose, and will not to be slow like your competence."
                     className="FrontpageCard Two" />
 
                 <FrontpageCard
                     image={ SEOIcon }
                     imageAlt="SEO Optimization"
-                    title="Optimización SEO"
-                    description="Diseñaré tu sitio web teniendo en mente los distintos navegadores optimizando el código haciendo que tu página sea SEO-friendly y así atraer más personas a tu negocio."
+                    title="SEO optimization"
+                    description="I'll design your website centered on your customers to improve the design and attract more people to your business."
                     className="FrontpageCard Three" />
             </FrontpageAbout>
 
@@ -78,7 +90,7 @@ const IndexPage = () => (
         </main>
 
         <Footer />
-    </div>
+    </>
 )
 
 // Frontpage About - Component
@@ -94,5 +106,6 @@ function FrontpageAbout( props ) {
         </section>
     )
 }
+
 
 export default IndexPage

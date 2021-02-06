@@ -16,14 +16,14 @@ const Footer = () => (
 
             <div className="Links">
                 <Link to="/blog/">Blog</Link>
-                <Link to="/about/">About</Link>
-                <Link to="/portfolio/">Portfolio</Link>
-                <Link to="/contact/">Contact</Link>
+                <Link to="/sobre-mi/">Sobre mí</Link>
+                <Link to="/portafolio/">Portafolio</Link>
+                <Link to="/contacto/">Contacto</Link>
             </div>
 
             <hr />
 
-            <p className="Copyrigth">© 2020 JoksanTelles. All rights reserved</p>
+            <p className="Copyrigth">© 2020 JoksanTelles. Todos los derechos reservados</p>
 
             <SocialMedia>
 

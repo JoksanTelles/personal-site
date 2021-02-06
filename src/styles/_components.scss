@@ -50,6 +50,7 @@
     align-items: center;
     gap: 10px;
     margin-left: 15px;
+    margin-top: 5px;
 }
 .Navigation .NavLinks {
     display: flex;
@@ -92,15 +93,15 @@
 // Icons on Navigation / MobileNavigation
 .Social .icon {
     width: 16px;
-    transition: color 500ms;
+    transition: color 300ms;
 }
 .Social a {
     color: #666;
-    transition: color 500ms;
+    transition: color 300ms;
 }
 .Social a:hover {
     color: var(--color-primary);
-    transition: color 500ms;
+    transition: color 300ms;
 }
 
 .Navbar .Menu {
@@ -111,7 +112,7 @@
 }
 
 // Hide and show Navigation Links
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .Navbar .NavLinks a { margin-left: 5px; }
 }
 
@@ -432,14 +433,15 @@
         grid-row:    2 / 3;
         grid-column: 1 / 7;
         width: 100%;
-        height: 250px;
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        a { height: 100%; }
         img {
             width: 100%;
+            height: 100%;
         }
     }
 }

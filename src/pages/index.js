@@ -4,16 +4,32 @@ import Footer from '../components/footer'
 import FrontpageHero from '../layouts/frontpage-hero'
 import FrontpageHeader from '../components/frontpage-header'
 import FrontpagePortfolio from '../layouts/frontpage-portfolio'
-import PortfolioProject from '../components/portfolio-project'
 import LowcostIcon from '../images/frontpage__lowcost.svg'
 import SEOIcon from '../images/frontpage__seo.svg'
 import SpeedIcon from '../images/frontpage__speed.svg'
 import FrontpageHeadindg from '../components/frontpage-heading'
 import FrontpageCard from '../components/frontpage-card'
+import Project from '../components/portfolio-project'
+import { Helmet } from 'react-helmet'
+import favicon from '../images/favicon/favicon.ico'
 
 // markup
 const IndexPage = () => (
-    <div>
+    <>
+        <Helmet
+            htmlAttributes={{
+                lang: 'es-MX',
+            }}
+            title='Joksan Télles | Front-End Developer &amp; UI/UX Designer'
+            meta={[
+                { name: 'description', content: 'Hola, soy Joksan Télles, diseñador UI/UX y desarrollador front-end en la ciudad de Veracruz, México' },
+                { name: 'keywords', content: 'diseño, desarrollo, website, ui/ux' },
+                { name: 'robots', content: 'index,follow' },
+            ]}
+        >
+            <link rel='icon' href={ favicon } />
+        </Helmet>
+
         <Navbar />
 
         <main className="FrontPage">
@@ -24,8 +40,8 @@ const IndexPage = () => (
                     title="Me llamo Joksan Télles, y soy diseñador y desarrollador en la ciudad de Veracruz, México :D"
                     subtitle="Hola"
                     description="Disfruto desarrollando trabajos de branding, diseño de producto de manera estratégica trabajando con personas apasionadas. Me encanta diseñar enfocado al usuario creando diseños fáciles de usar."
-                    CTAlinkOne="/portfolio/" CTAtextOne="Mis proyectos"
-                    CTAlinkTwo="/about/"     CTAtextTwo="Sobre mí" />
+                    CTAlinkOne="/portafolio/" CTAtextOne="Mis proyectos"
+                    CTAlinkTwo="/sobre-mi/"   CTAtextTwo="Sobre mí" />
 
             </FrontpageHero>
 
@@ -59,32 +75,34 @@ const IndexPage = () => (
 
             <FrontpagePortfolio>
 
-                <PortfolioProject
-                    date="January 12, 2020"
-                    title="Open AI's Hide-and-Seek the Systems Perspective"
-                    link="https://joksantelles.com/"
-                    description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
-                    category="Personal"
-                    linkCategory="https://joksantelles.com/"
-                    image="https://i.pinimg.com/originals/a5/76/0e/a5760ecb0a999a2434414831e1c89f9e.jpg"
-                    imageAlt="Imagen de prueba" />
+                <Project
+                    linkCategory="https://joksantelles.com"
+                    linkProject="https://joksantelles.com"
+                    linkImage="https://i.pinimg.com/originals/a5/76/0e/a5760ecb0a999a2434414831e1c89f9e.jpg"
+                    altImage="This is an image">
+                    <Project.Title>Aliquam non scelerisque nulla, vel suscipit ligula.</Project.Title>
+                    <Project.Date>January 12, 2020</Project.Date>
+                    <Project.Category>Branding</Project.Category>
+                    <Project.Description>Donec elementum dolor luctus suscipit iaculis. Pellentesque rutrum viverra nunc, sed ullamcorper nisi feugiat et. Quisque rutrum risus ligula, ac mattis erat fermentum vel. Aliquam erat volutpat. Aenean consequat auctor ipsum ut ultrices. Integer nec ligula in arcu dapibus aliquam. Pellentesque aliquam viverra laoreet.</Project.Description>
+                </Project>
                 
-                <PortfolioProject
-                    date="February 5, 2020"
-                    title="Text-rotation in CSS"
-                    link="https://joksantelles.com/"
-                    description="The rotation property of Internet Explorer’s BasicImage filter can accept one of four values: 0, 1, 2, or 3 which will rotate the element 0, 90, 180 or 270 degrees respectively."
-                    category="Design"
-                    linkCategory="https://joksantelles.com/"
-                    image="https://i.pinimg.com/736x/bc/9f/45/bc9f45faaabe200f75e8450fcf3b35a9.jpg"
-                    imageAlt="Imagen de prueba"  />
-                    
+                <Project
+                    linkCategory="https://joksantelles.com"
+                    linkProject="https://joksantelles.com"
+                    linkImage="https://i.pinimg.com/736x/bc/9f/45/bc9f45faaabe200f75e8450fcf3b35a9.jpg"
+                    altImage="This is an image">
+                    <Project.Title>Proin vel velit ut quam blandit elementum</Project.Title>
+                    <Project.Date>February 5, 2020</Project.Date>
+                    <Project.Category>Design</Project.Category>
+                    <Project.Description>In hac habitasse platea dictumst. Curabitur congue, tellus ac feugiat pellentesque, risus purus euismod quam, ut lacinia orci velit et diam. Nullam consequat a diam vel fermentum. Etiam ac tortor nisl. Aliquam placerat justo sit amet finibus commodo. Nullam nec sodales nunc.</Project.Description>
+                </Project>
+                
             </FrontpagePortfolio>
 
         </main>
 
         <Footer />
-    </div>
+    </>
 )
 
 // Frontpage About - Component
@@ -95,7 +113,7 @@ function FrontpageAbout( props ) {
                 { props.children }
             </div>
             <div className="Background">
-                <div class="circle"></div>
+                <div className="circle"></div>
             </div>
         </section>
     )

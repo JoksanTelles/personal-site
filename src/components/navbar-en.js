@@ -11,7 +11,7 @@ import BrandLinkedin from "./icons/brandLinkedin.js"
 import BrandDribbble from "./icons/brandDribbble.js"
 import BrandCodepen from "./icons/brandCodepen.js"
 
-const Navbar = ( { blog, blogLink, about, aboutLink, portfolio, portfolioLink } ) => {
+const NavbarEn = () => {
 
     // Yep, here's the Navbar Responsive state :P
     const [navigation, navigationOpen] = useState(false)
@@ -20,7 +20,7 @@ const Navbar = ( { blog, blogLink, about, aboutLink, portfolio, portfolioLink } 
         <header className={ navigation ? "Navbar Open" : "Navbar"}>
             <div className="container">
 
-                <Link to="/" className="Logo">
+                <Link to="/en/" className="Logo">
                     <Logo />
                 </Link>
 
@@ -46,23 +46,23 @@ const Navbar = ( { blog, blogLink, about, aboutLink, portfolio, portfolioLink } 
                     <NavLinks>
 
                         <NavItem
-                            link="/blog/"
+                            link="/en/blog/"
                             linkText="Blog"
                             icon={ <IconBlog/> } />
 
                         <NavItem
-                            link="/sobre-mi/"
-                            linkText="Sobre mí"
+                            link="/en/about/"
+                            linkText="About"
                             icon={ <IconAbout/> } />
 
                         <NavItem
-                            link="/portafolio/"
-                            linkText="Portafolio"
+                            link="/en/portfolio/"
+                            linkText="Portfolio"
                             icon={ <IconPortfolio/> } />
 
                         <NavItem
-                            link="/contacto/"
-                            linkText="Contacto"
+                            link="/en/contact/"
+                            linkText="Contact"
                             icon={ <IconContact/> } />
 
                     </NavLinks>
@@ -85,23 +85,23 @@ const Navbar = ( { blog, blogLink, about, aboutLink, portfolio, portfolioLink } 
                 <NavLinks>
 
                     <NavItem
-                        link="/blog/"
+                        link="/en/blog/"
                         linkText="Blog"
                         icon={ <IconBlog/> } />
 
                     <NavItem
-                        link="/sobre-mi/"
-                        linkText="Sobre mí"
+                        link="/en/about/"
+                        linkText="About"
                         icon={ <IconAbout/> } />
 
                     <NavItem
-                        link="/portafolio/"
-                        linkText="Portafolio"
+                        link="/en/portfolio/"
+                        linkText="Portfolio"
                         icon={ <IconPortfolio/> } />
 
                     <NavItem
-                        link="/contacto/"
-                        linkText="Contacto"
+                        link="/en/contact/"
+                        linkText="Contact"
                         icon={ <IconContact/> } />
 
                 </NavLinks>
@@ -185,4 +185,4 @@ function SocialIcon({ link, icon }) {
 }
 
 
-export default Navbar;
+export default NavbarEn;

@@ -1,19 +1,31 @@
 import React from 'react'
-import Navbar from '../../components/navbar'
+import Navbar from '../../components/navbar-en'
 import PageHeader from '../../components/page-header'
 import Footer from '../../components/footer'
 import CardLevel from '../../components/CardLevel'
+import { Helmet } from 'react-helmet'
 
 const About = () => (
     
-    <div>
+    <>
+        <Helmet
+            htmlAttributes={{
+                lang: 'en-US',
+            }}
+            title='About | Joksan Telles'
+            meta={[
+                { name: 'description', content: 'I\'m Joksan Télles, Designer & Developer based in Veracruz city, México.' },
+                { name: 'keywords', content: 'design, develop, website, ui/ux, about me' },
+                { name: 'robots', content: 'index,follow' },
+            ]}
+        />
 
         <Navbar />
 
         <PageHeader
-            title="Desarrollador Front-End y Diseñador UI/UX"
-            subtitle="Sobre mí"
-            description="Me encanta crear productos digitales basados en estrategia, diseño y código. Mis principios están basados en el minimalismo: haz más haciendo menos." />
+            title="Front-End Developer and UI/UX Designer based in México."
+            subtitle="About me"
+            description="I love create digital products based on strategy, design and code. My principles are based on essentialism: make more, doing less. " />
 
         <main className="AboutPage">
             <div className="twocolumn">
@@ -21,15 +33,15 @@ const About = () => (
                 <div className="container">
 
                     <div className="one">
-                        <h3 className="title">Me encanta crear experiencias digitales basadas en las emociones y el comportamiento humano.</h3>
+                        <h3 className="title">I love to create digital experiences based on human beign emotions and behaviour.</h3>
                     </div>
 
                     <div className="two">
-                        <p>Amo crear productos digitales basados en diseño y código limpio. Valoro los procesos y crear mi propio flujo de trabajo para simplificar cualquier cosa, no solo mi trabajo, sino además mi vida en general.</p>
+                        <p>I love create digital products based on strategy, design and code. My principles are based on essentialism: make more, doing less.</p>
 
-                        <p>Disfruto leyendo blogs y viendo videos todos los días para aprender y mejorar en lo que sea posible. A veces me encontraré aprendiendo sobre SEO, Marketing, Diseño, Desarrollo e incluso temas pocos relacionados con mi trabajo como desarrollo de videojuegos, rutina de ejercicios y alimentación saludable.</p>
+                        <p>I value processes, and I create my own workflow for anything to constantly improve not just my work, but my life.</p>
 
-                        <p>Nunca me detengo de aprender. Cada día es una nueva oportunidad para aprender algo nuevo.</p>
+                        <p>I enjoy reading blogs and watching videos everyday to learn and improve my life on topics like SEO, Marketing, Design, Development and even Healthcare and Workout. I never stop learning, every day is a oportunity to lern something new.</p>
                     </div>
 
                 </div>
@@ -38,28 +50,28 @@ const About = () => (
             <div className="threecolumn">
                 <div className="container">
                     <TitleThreeColumn
-                        Title="Experiencia" />
+                        Title="Experience" />
 
                     <div className="two">
                         <ExperienceCard
-                            Title="Ideas Eficaces | Diseñador gráfico"
-                            Date="De Julio 2017 a Diciembre 2017"
+                            Title="Ideas Eficaces | Graphic Designer"
+                            Date="From July 2017 to December 2017"
                             URL="http://www.ideaseficaces.mx/"
-                            Description="Mucho de mi trabajo era sacar diseños rápidos para una empresa que se dedicaba a la imprenta en serigrafía y sublimación. Mi trabajo como diseñador iba de hacer 3 a 5 diseños diarios en los días más ligeros o de 15 a 30 en los días más cansados." />
+                            Description="A lot of my job was to come up with quick designs for a company that was dedicated to screen printing and sublimation. My job as a designer went from doing 3 to 5 designs a day on the lightest days or 15 to 30 on the most exhausting days." />
                         <ExperienceCard
-                            Title="Freelancer | Diseñador, desarrollador e  ilustrador"
-                            Date="De Enero 2018 a Febrero 2020"
+                            Title="Freelancer | Illustrator and Designer"
+                            Date="From January 2018 to February 2020"
                             URL="https://joksantelles.com"
-                            Description="Siendo freelance hice muchos tipos de trabajo, desde desarrollo de personajes, diseño de sitios web con WordPress, diseño de identidad corporativa, pero la gran mayoría de mi trabajo era crear cartelería y flyers para publicidad. Además de adquirir experiencia en diseño también obtuve mucha experiencia en los negocios." />
+                            Description="As a freelancer, I did many types of work, from character development, WordPress website design, corporate identity design, but the vast majority of my work was creating posters and flyers for advertising. In addition to gaining experience in design, I also gained a lot of experience in business." />
                         
                         
                     </div>
                     <div className="three">
                         <ExperienceCard
-                            Title="Plug In Marketing | Diseñador y desarrollador"
-                            Date="De Marzo 2020 a la actualidad"
+                            Title="Plug In Marketing | Designer and Developer"
+                            Date="From March 2020 to Currently"
                             URL="http://pluginmarketing.com"
-                            Description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." />
+                            Description="My job at the beginning was more to design to develop content on social networks, but later I began to work more as a Jr. Front-End Developer developing websites for clients and for the company itself." />
                     </div>
                 </div>
             </div>
@@ -67,20 +79,20 @@ const About = () => (
             <div className="threecolumn">
                 <div className="container">
                     <TitleThreeColumn
-                        Title="Educación" />
+                        Title="Education" />
                     <div className="two">
                         <ExperienceCard
-                            Title="Diseño gráfico - Computación del Golfo"
-                            Date="De Julio 2016 a Enero 2018"
+                            Title="Graphic Design - Computación del Golfo"
+                            Date="From July 2016 to January 2018"
                             URL="https://www.cg.edu.mx"
-                            Description="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy." />
+                            Description="Computación del Golfo is a school focused on education about new technologies and it was my first entry into the world of designing in a more professional way. The things I learned ranged from the basics of graphic design, using Adobe family software, and many other things." />
                     </div>
                     <div className="three">
                         <ExperienceCard
                             Title="UI/UX Design - Zero To Mastery"
-                            Date="De Agosto 2020 a Diciembre 2020"
+                            Date="From August 2020 to December 2020"
                             URL="https://zerotomastery.io/"
-                            Description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable." />
+                            Description="This 25+ hour course in English, taught by Andrei Neagoie at Udemy, taught me a great deal about user interface and experience design." />
                     </div>
                 </div>
             </div>
@@ -93,7 +105,7 @@ const About = () => (
                             Title="Developer skills"
                             Date=""
                             URL=""
-                            Description="Creativity it's an active state where you get involved in exploring everything to make your brain deeply capable to get new ideas and find new paths to follow." />
+                            Description="As a developer I have had a lot to learn and every day I add new things to my knowledge by getting into new technologies, getting to know new frameworks, languages, work methodologies. Every day there is a new challenge." />
                         
 
                         <CardLevel
@@ -138,7 +150,7 @@ const About = () => (
                             Title="Designer skills"
                             Date=""
                             URL=""
-                            Description="Creativity it's an active state where you get involved in exploring everything to make your brain deeply capable to get new ideas and find new paths to follow." />
+                            Description="I have had the soul of a designer for as long as I can remember. I always enjoy design and constantly have fun with the colors, shapes, structures and resources that I have." />
                         
                         
                         <CardLevel
@@ -179,7 +191,7 @@ const About = () => (
         </main>
         
         <Footer />
-    </div>
+    </>
 )
 
 // Title for ThreeColumn - Component

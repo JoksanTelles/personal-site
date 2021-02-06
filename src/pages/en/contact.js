@@ -1,7 +1,7 @@
 import React from 'react'
-import Footer from '../components/footer'
-import Navbar from '../components/navbar'
-import PageHeader from '../components/page-header'
+import Footer from '../../components/footer'
+import Navbar from '../../components/navbar-en'
+import PageHeader from '../../components/page-header'
 import { Helmet } from 'react-helmet'
 
 const Contact = () => (
@@ -9,12 +9,12 @@ const Contact = () => (
     <>
         <Helmet
             htmlAttributes={{
-                lang: 'es-MX',
+                lang: 'en-US',
             }}
-            title='Contacto | Joksan Télles'
+            title='Contact | Joksan Telles'
             meta={[
-                { name: 'description', content: 'Comunicate conmigo para que pueda ayudarte en el desarrollo de tu sitio web' },
-                { name: 'keywords', content: 'diseño, desarrollo, website, ui/ux' },
+                { name: 'description', content: 'Get start a new conversation between us and get new insights because our knowledge.' },
+                { name: 'keywords', content: 'design, develop, website, ui/ux, about me' },
                 { name: 'robots', content: 'index,follow' },
             ]}
         />
