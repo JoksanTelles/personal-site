@@ -28,12 +28,169 @@ const Blog = () => (
         <BlogArticles>
             <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
-                    Here goes the tags
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
                 </Article.Tags>
             </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+            
+            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+                <Article.Title>This is the title</Article.Title>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
+                <Article.Tags>
+                    <Tag link="https://joksantelles.com/" text="Social Media" />
+                    <Tag link="https://joksantelles.com/" text="Design" />
+                    <Tag link="https://joksantelles.com/" text="Branding" />
+                </Article.Tags>
+            </Article>
+
         </BlogArticles>
 
         <Footer />
@@ -47,6 +204,14 @@ function BlogArticles( props ) {
                 { props.children }
             </div>
         </main>
+    )
+}
+
+function Tag({ link, text}) {
+    return (
+        <a href={ link }><button className="button btn-small">
+            { text }
+        </button></a>
     )
 }
 
