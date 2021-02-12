@@ -26,7 +26,7 @@ const Blog = () => (
             description="En este espacio me encontrarás compartiendo contenido de valor ya sea de diseño, desarrollo o incluso temas off-topic." />
 
         <BlogArticles>
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
                 <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
@@ -37,9 +37,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -48,9 +48,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -59,9 +59,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -70,9 +70,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -81,9 +81,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -92,9 +92,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -103,9 +103,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -114,9 +114,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -125,9 +125,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -136,9 +136,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
@@ -147,42 +147,9 @@ const Blog = () => (
                 </Article.Tags>
             </Article>
             
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
+            <Article LinkArticle="https://joksantelles.com" LinkCategory="https://joksantelles.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
                 <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
-                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
-                <Article.Tags>
-                    <Tag link="https://joksantelles.com/" text="Social Media" />
-                    <Tag link="https://joksantelles.com/" text="Design" />
-                    <Tag link="https://joksantelles.com/" text="Branding" />
-                </Article.Tags>
-            </Article>
-            
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
-                <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
-                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
-                <Article.Tags>
-                    <Tag link="https://joksantelles.com/" text="Social Media" />
-                    <Tag link="https://joksantelles.com/" text="Design" />
-                    <Tag link="https://joksantelles.com/" text="Branding" />
-                </Article.Tags>
-            </Article>
-            
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
-                <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
-                <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
-                <Article.Tags>
-                    <Tag link="https://joksantelles.com/" text="Social Media" />
-                    <Tag link="https://joksantelles.com/" text="Design" />
-                    <Tag link="https://joksantelles.com/" text="Branding" />
-                </Article.Tags>
-            </Article>
-            
-            <Article LinkArticle="https://hello.com" LinkCategory="https://hioes.com/" LinkImage="https://miro.medium.com/max/1600/1*2X22CjejXcLSWPeMpZIa0Q.jpeg">
-                <Article.Title>This is the title</Article.Title>
-                <Article.Category>Branding</Article.Category><Article.Date>December 15</Article.Date>
+                <Article.Category>Branding</Article.Category><Article.Date>December 15, 2020</Article.Date>
                 <Article.Description>This is suppouse that is the long description that i've build to this example of component</Article.Description>
                 <Article.Tags>
                     <Tag link="https://joksantelles.com/" text="Social Media" />
