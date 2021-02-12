@@ -51,6 +51,9 @@ h1 { font-size: 36px; }
         font-size: 14px
     }
 }
+.button:hover {
+    cursor: pointer;
+}
 
 // Button primary
 .btn-primary {
@@ -132,4 +135,9 @@ h1 { font-size: 36px; }
     padding: 0 15px;
     background-color: var(--color-primary-100);
     color: var(--color-primary);
+}
+.btn-large {
+    height: 50px;
+    padding: 0 50px;
+    font-size: 20px;
 }

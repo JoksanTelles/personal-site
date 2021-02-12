@@ -50,7 +50,9 @@ const About = () => (
             <div className="threecolumn">
                 <div className="container">
                     <TitleThreeColumn
-                        Title="Experiencia" />
+                        Title="Experiencia"
+                        Id="experiencia"
+                    />
 
                     <div className="two">
                         <ExperienceCard
@@ -70,7 +72,7 @@ const About = () => (
                         <ExperienceCard
                             Title="Plug In Marketing | Diseñador y desarrollador"
                             Date="De Marzo 2020 a la actualidad"
-                            URL="http://pluginmarketing.com"
+                            URL="http://pluginmarketing.com.mx"
                             Description="Mi trabajo al inicio consistía más en diseñar para desarrollar contenido en redes sociales, pero más adelante comencé a trabajar más como Jr. Front-End Developer desarrollando sitios web para clientes y para la propia empresa." />
                     </div>
                 </div>
@@ -79,7 +81,9 @@ const About = () => (
             <div className="threecolumn">
                 <div className="container">
                     <TitleThreeColumn
-                        Title="Educación" />
+                        Title="Educación"
+                        Id="educacion"
+                    />
                     <div className="two">
                         <ExperienceCard
                             Title="Diseño gráfico - Computación del Golfo"
@@ -99,7 +103,10 @@ const About = () => (
 
             <div className="threecolumn">
                 <div className="container">
-                    <TitleThreeColumn Title="Habilidades en la actualidad" />
+                    <TitleThreeColumn
+                        Title="Habilidades en la actualidad"
+                        Id="habilidades"
+                    />
                     <div className="two">
                         <ExperienceCard
                             Title="Habilidades como desarrollador"
@@ -195,11 +202,11 @@ const About = () => (
 )
 
 // Title for ThreeColumn - Component
-function TitleThreeColumn( { Title } ) {
+function TitleThreeColumn( { Title, Id } ) {
     return (
         <div className="one">
             <div className="divisor"></div>
-            <h3 className="title">{ Title }</h3>
+            <h3 className="title" id={ Id }>{ Title }</h3>
         </div>
     )
 }

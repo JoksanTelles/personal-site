@@ -11,7 +11,7 @@ import FrontpageHeadindg from '../components/frontpage-heading'
 import FrontpageCard from '../components/frontpage-card'
 import Project from '../components/portfolio-project'
 import { Helmet } from 'react-helmet'
-import favicon from '../images/favicon/favicon.ico'
+// import favicon from '../images/favicon/favicon.ico'
 
 // markup
 const IndexPage = () => (
@@ -26,9 +26,7 @@ const IndexPage = () => (
                 { name: 'keywords', content: 'diseño, desarrollo, website, ui/ux' },
                 { name: 'robots', content: 'index,follow' },
             ]}
-        >
-            <link rel='icon' href={ favicon } />
-        </Helmet>
+        />
 
         <Navbar />
 

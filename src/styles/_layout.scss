@@ -683,3 +683,146 @@
 @media screen and (min-width: 1200px) {
     .Portfolio { margin: 50px; max-width: 1200px;}
 }
+
+
+/* -------------------------------------------------
+   # Contact Page - Layout
+----------------------------------------------------*/
+.ContactPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.ContactForm {
+    max-width: 500px;
+    margin: 25px;
+    width: 100%;
+
+    .button {
+        margin-right: auto;
+    }
+}
+
+/* 576, 768, 1024, 1200*/
+@media screen and (min-width: 768px) {
+    .ContactForm {
+        max-width: 750px;
+        margin: 30px;
+        display: grid;
+        column-gap: 20px;
+        row-gap: 30px;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: repeat(8, 1fr);
+
+        .name {
+            grid-column: 1 / 5;
+            grid-row:    1 / 2;
+        }
+        .email {
+            grid-column: 5 / 9;
+            grid-row:    1 / 2;
+        }
+        .company {
+            grid-column: 1 / 5;
+            grid-row:    2 / 3;
+        }
+        .project {
+            grid-column: 5 / 9;
+            grid-row:    2 / 3;
+        }
+        .location {
+            grid-column: 1 / 5;
+            grid-row:    3 / 4;
+        }
+        .budget {
+            grid-column: 5 / 9;
+            grid-row:    3 / 4;
+        }
+        .message {
+            grid-column: 1 / 9;
+            grid-row:    4 / 5;
+        }
+        .button {
+            grid-column: 1 / 5;
+            grid-row:    5 / 6;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .ContactForm {
+        max-width: 1000px;
+        margin: 40px;
+        display: grid;
+        column-gap: 20px;
+        row-gap: 40px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: repeat(12, 1fr);
+
+        .name {
+            grid-column: 1 / 5;
+            grid-row:    1 / 2;
+        }
+        .email {
+            grid-column: 5 / 9;
+            grid-row:    1 / 2;
+        }
+        .company {
+            grid-column: 9 / 13;
+            grid-row:    1 / 2;
+        }
+        .project {
+            grid-column: 1 / 5;
+            grid-row:    2 / 3;
+        }
+        .location {
+            grid-column: 5 / 9;
+            grid-row:    2 / 3;
+        }
+        .budget {
+            grid-column: 9 / 13;
+            grid-row:    2 / 3;
+        }
+        .message {
+            grid-column: 1 / 13;
+            grid-row:    3 / 4;
+        }
+        .button {
+            max-width: none;
+            grid-column: 1 / 5;
+            grid-row: 4 / 5;
+        }
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .ContactForm {
+        column-gap: 30px;
+    }
+}
+
+
+/* -------------------------------------------------
+   # Blog page - Page
+----------------------------------------------------*/
+.BlogPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        gap: 30px;
+
+        .BlogArticle {
+            z-index: 100;
+            width: calc((100% - 90px) / 4);
+        }
+
+    }
+}

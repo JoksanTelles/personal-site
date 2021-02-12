@@ -828,3 +828,79 @@
         }
     }
 }
+
+/* -------------------------------------------------
+   # Contact page - Components
+----------------------------------------------------*/
+.ContactForm {
+    z-index: 30;
+    margin-bottom: 50px;
+}
+/* ContactForm */
+.ContactForm div {
+    margin-bottom: 30px;
+}
+
+.ContactForm div {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid gray;
+        height: 50px;
+        padding: 5px;
+        transition: padding 150ms;
+        background: transparent;
+    }
+    input:focus {
+        padding: 10px;
+    }
+
+    select {
+        padding: 0px;
+        border: 0;
+        height: 50px;
+        border-bottom: 1px solid gray;
+        background: transparent;
+        transition: padding 150ms;
+    }
+    select:focus {
+        padding: 0 5px;
+    }
+    textarea {
+        resize: vertical;
+        height: 200px;
+        border: 0;
+        border-bottom: 1px solid gray;
+        padding: 20px 5px;
+        transition: padding 150ms;
+    }
+    textarea:focus {
+        padding: 20px 10px;
+    }
+    span {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: #494949;
+    }
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+
+/* -------------------------------------------------
+   # Blog Aticle - Components
+----------------------------------------------------*/
+.BlogArticle {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+    }
+}
