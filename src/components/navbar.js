@@ -8,7 +8,6 @@ import IconContact from "./icons/iconContact.js"
 import IconMenu from "./icons/iconMenu"
 import BrandGithub from "./icons/brandGithub.js"
 import BrandLinkedin from "./icons/brandLinkedin.js"
-import BrandDribbble from "./icons/brandDribbble.js"
 import BrandCodepen from "./icons/brandCodepen.js"
 
 const Navbar = ( { blog, blogLink, about, aboutLink, portfolio, portfolioLink } ) => {
@@ -35,10 +34,7 @@ const Navbar = ( { blog, blogLink, about, aboutLink, portfolio, portfolioLink } 
                             link="https://www.linkedin.com/in/joksantelles/"
                             icon={ <BrandLinkedin /> } />
                         <SocialIcon
-                            link="https://www.linkedin.com/in/joksantelles/"
-                            icon={ <BrandDribbble /> } />
-                        <SocialIcon
-                            link="https://www.linkedin.com/in/joksantelles/"
+                            link="https://codepen.io/JoksanTelles/"
                             icon={ <BrandCodepen /> } />
 
                     </SocialMedia>
@@ -115,11 +111,8 @@ const Navbar = ( { blog, blogLink, about, aboutLink, portfolio, portfolioLink } 
                         link="https://www.linkedin.com/in/joksantelles/"
                         icon={ <BrandLinkedin /> } />
                     <SocialIcon
-                        link="https://www.linkedin.com/in/joksantelles/"
-                        icon={ <BrandDribbble /> } />
-                    <SocialIcon
-                        link="https://www.linkedin.com/in/joksantelles/"
-                        icon={ <BrandCodepen /> } />
+                            link="https://codepen.io/JoksanTelles/"
+                            icon={ <BrandCodepen /> } />
 
                 </SocialMedia>
 

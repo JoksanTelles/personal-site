@@ -3,7 +3,6 @@ import Link from "gatsby-link"
 import Logo from './icons/logo'
 import BrandGithub from "./icons/brandGithub.js"
 import BrandLinkedin from "./icons/brandLinkedin.js"
-import BrandDribbble from "./icons/brandDribbble.js"
 import BrandCodepen from "./icons/brandCodepen.js"
 
 const Footer = () => (
@@ -34,11 +33,8 @@ const Footer = () => (
                     link="https://www.linkedin.com/in/joksantelles/"
                     icon={ <BrandLinkedin /> } />
                 <SocialIcon
-                    link="https://www.linkedin.com/in/joksantelles/"
-                    icon={ <BrandDribbble /> } />
-                <SocialIcon
-                    link="https://www.linkedin.com/in/joksantelles/"
-                    icon={ <BrandCodepen /> } />
+                            link="https://codepen.io/JoksanTelles/"
+                            icon={ <BrandCodepen /> } />
 
             </SocialMedia>
         </div>
