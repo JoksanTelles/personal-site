@@ -18,6 +18,15 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
       },
-    }
+    },
+    'gatsby-plugin-catch-links',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/blog`,
+        name: 'blog'
+      }
+    },
+    'gatsby-transformer-remark',
   ],
 };

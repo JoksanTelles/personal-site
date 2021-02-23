@@ -870,3 +870,104 @@
         }
     }
 }
+
+// BlogHeader
+.BlogHeader {
+    height: 100%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+    .BlogHeader {
+        min-height: 500px;
+    }
+}
+
+/* -------------------------------------------------
+   # Article - Page
+----------------------------------------------------*/
+.ArticlePage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .cover {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px 5px #00000011;
+    }
+}
+.Article {
+    max-width: 800px;
+    margin: 0 auto;
+
+    // Preformat
+    p, h1, h2, h3, h4, h5, h6, hr, ul, ol, pre, table {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    // Font style and weight
+    p, li, span, ul li, ol li {
+        font-size: 18px;
+        font-family: 'fontextra';
+        font-weight: 400;
+    }
+    // Margin bottom
+    h1, h2, h3, h4, h5, h6 {
+        margin: 3rem auto 1.5rem;
+    }
+    p {
+        margin: 1.5rem auto;
+    }
+    ul li,
+    ol li,
+    ul li p,
+    ol li p {
+        margin: 0.5rem auto;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    blockquote {
+        background-color: #f4f5ff;
+        border-left: 5px #2b6bde solid;
+        padding: 30px 50px;
+        margin: 1rem auto;
+        width: 100%;
+        max-width: 700px;
+
+        p {
+            margin: 0.5rem auto;
+            font-size: 24px;
+            font-style: italic;
+        }
+        span {
+            margin-top: 1rem;
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    hr {
+        border: 0;
+        margin: 15px 0 60px 0;
+    }
+    hr:after {
+        content: "•  •  •";
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.Article > ul,
+.Article > ol {
+    margin-bottom: 2rem;
+}

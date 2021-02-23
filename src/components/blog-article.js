@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Article = ( { children, LinkImage, AltImage, LinkArticle, LinkCategory } ) => {
+const Article = ( { children, LinkImage, AltImage, LinkArticle, LinkCategory, Key } ) => {
     // Article name
     const title = React.Children.map(children, child => child.type.displayName === 'Title' ? child : null);
     // Article description
@@ -15,7 +15,7 @@ const Article = ( { children, LinkImage, AltImage, LinkArticle, LinkCategory } )
 
 
     return (
-        <article className="BlogArticle">
+        <article className="BlogArticle" key={ Key }>
             <a href={ LinkArticle }>
                 <img src={ LinkImage } alt={ AltImage } className="image" />
             </a>
