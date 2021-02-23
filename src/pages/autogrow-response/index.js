@@ -18,7 +18,7 @@ const Response = () => (
         />
         <main className="Response">
             <div className="container">
-                <p>Hi, there.</p>
+                <h1>My biggest project</h1>
                 <p>I know that it's not an excuse, but I was working on different projects and that's why my Portfolio looks a lil' caotic with works of so long time (the illustration and graphic design section), but it's because I was working on my WebDev skills.</p>
                 <p>I'm still working on this website, so it's the reason why I'm a bit shy to show you an incomplete design.</p>
 

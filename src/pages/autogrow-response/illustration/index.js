@@ -18,6 +18,7 @@ const Illustration = () => (
         />
         <main className="Response">
             <div className="container">
+                <h1>Illustration</h1>
                 <p>May be it's not what you would like to see, but are the only Illustrations that I made for the web.</p>
 
                 <p>This is a real project, and here's the link:</p>
